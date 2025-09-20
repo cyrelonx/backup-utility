@@ -6,9 +6,6 @@
 using namespace std;
 namespace fs = std::filesystem;
 
-void backup(const fs::path& src, const fs::path& dest);
-void copyFile(const fs::path& src, const fs::path& dest);
-
 void copyFile(const fs::path& src, const fs::path& dest)
 {
     if (!fs::exists(dest))
